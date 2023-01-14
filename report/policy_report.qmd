@@ -28,30 +28,15 @@ format:
 
 ## Declaration of Authorship {.unnumbered .unlisted}
 
-I, [insert your name], confirm that the work presented in this assessment is my own. Where information has been derived from other sources, I confirm that this has been indicated in the work.
+We, Hansen, Farhan and Josiah, confirm that the work presented in this assessment is my own. Where information has been derived from other sources, I confirm that this has been indicated in the work.
 
-['Sign' your name here]
+['Sign' here]
 
-Date:
+Date: 
 
-Student Number: 
+Student Numbers: 
 
-## Who collected the data?
+# Policy Report 
 
-An inline citation: As discussed on @insideairbnb, there are many...
-
-A parenthetical citation: There are many ways to research Airbnb [see, for example, @insideairbnb].
-
-## Why did they collect it?
-
-## How was it collected?
-
-## What useful information does it contain?
-
-## To what extent is the data 'complete'?
-
-## What kinds of analysis would this support?
-
-## Which of the analyses outlined above are ethical?
 
 ## References
