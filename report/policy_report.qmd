@@ -1,7 +1,7 @@
 ---
 bibliography: bio.bib
 csl: harvard-cite-them-right.csl
-title: Policy Report
+title: Identifying potential locations to be developed- Utilising Airbnb data to revive London's tourism industry
 format: 
   pdf:
     include-in-header:
@@ -28,7 +28,7 @@ format:
 
 ## Declaration of Authorship {.unnumbered .unlisted}
 
-We, Hansen Wiguna, Farhan Khairulannuar and Josiah Tan, confirm that the work presented in this assessment is my own. Where information has been derived from other sources, I confirm that this has been indicated in the work.
+We, Hansen Wiguna, Farhan Khairulannuar and Josiah Tan, confirm that the work presented in this assessment is our own. Where information has been derived from other sources, we confirm that this has been indicated in the work.
 
 [Hansen Wiguna, Farhan Khairulannuar and Josiah Tan]
 
@@ -44,11 +44,13 @@ Student Numbers: 21113316 , 22139642, 18000875
 - Findings allow for recommendations to be made on how best to revive London tourism industry via the erection of new tourist locations outside of central cluster. 
 - Airbnb listings data should not be the only dimension analysed when discussing revitalisation efforts; policy brief only acts as a nudge towards a direction that could potentially be taken in order to address the issue of post-pandemic tourism recovery. 
 - Revitalization approach must be done concurrently with other efforts to allow for sustainable tourism to flourish, as gentrification and overtourism are major issues that plague world cities such as London. 
+
 ## Introduction
 The tourism industry contributes greatly to the United Kingdom’s overall GDP, with service-related jobs consisting of retail, hospitality, and professional services (among others), dominating the country’s economic output [@hutton_industries_2023]. Service industries amounted to a total of 1.6 trillion in Gross Added Value (GAV) in 2021, accounting for 80% of the country’s GAV within that specific year [@james_silver_london_2021]. When measuring economic contribution by city, London tops the chart, with 22.7% and 23.8% in GDP and GAV contributions respectively (ibid.). 
 Additionally, London is a major tourist location and ranked third in terms of number of visitors at over 19 million pre-Covid [@euromonitor_international_2019], meaning that the pandemic’s impact towards London’s tourism and hospitality industries is a major blow towards the city’s economic contributions. 
 To protect London’s long-term rental housing stock, there has been a cap of 90 nights per year on short-term lets. While the Mayor has called for a centralised registration system to mitigate the impact of visitor turnover on local communities, it recognises that short-term rentals provide accommodation options for visitors and boosts London’s economy [@mayor_of_london_mayor_2019]. 
 With this issue in mind, this policy brief aims to aims to revitalize London’s tourism industry through a new approach: by identifying wards within London which may benefit from an increase of tourist activities using Airbnb listings as a metric for attractiveness of location as a tourist destination. Our research is an attempt at expanding the reach of the tourism beyond central London, in order to help rejuvenate the sector post-covid as well as to allow for more communities to participate in this sector, thus increasing boosting local economies and cementing tourism as a legitimate revenue source. 
+
 ## Methodology 
 - Methods of analysis chosen
   - Multiple regression analysis
@@ -66,23 +68,31 @@ With this issue in mind, this policy brief aims to aims to revitalize London’s
   - Data preparation is conducted to ensure only relevant aspects of dataset are included for purposes of analysis. This includes removing incorrect or unavailable values, grouping data by MSOA, fitting Airbnb listings into correct MSOA polygons.
   - Once data has been cleaned, regression analysis is carried out. Regression analysis allows us to identify relationships between aforementioned variables and occupancy (defined as the approximate number of days a listing is booked within a calendar year as determined by Airbnb regulations [@inside_airbnb_inside_2022b], which is used to measure attractiveness of an Airbnb listing. 
   - Clustering is carried out to group MSOAs in terms of similar characteristics. Listings with shared traits are then displayed on the London MSOA map, sourced from the MSOA Atlas. 
+  
 ## Findings
 From the methods of analysis conducted, key findings present themselves in the form of correlation between the variables listed in the previous section. This is to identify the existence of a statistical relationship between the variables chosen, allowing us to delve deeper into the reasons as to why a dependency may exist. It is important to note, however, that correlation does not necessarily indicate causation, and that the findings displayed through the methods of analysis selected merely allow us to forecast potential behaviours or relationships displayed, using regression as a predictive tool.  
 The findings show that all variables on an MSOA level - number of listings, listing price, house price, average income, and population density, are positively correlated with occupancy. There is a moderate positive correlation, with most coefficients between 0.15 to 0.5. Income and house prices have the strongest correlation coefficient of 0.81, which is expected. 
 The multiple linear regression of our independent variables on occupancy of Airbnb listings gives us insight into the predictors of Airbnb occupancy and how Airbnb users think. The number of listings in a MSOA is not statistically significant. A 10% increase in median listing price in a MSOA means a decrease of 1.2 days occupied. A 1% increase in house prices in MSOAs means an increase of 26 days occupied. A 1% increase in average income of an MSOA means an increase of 47 days occupied. More population dense MSOAs translate to increased occupancy, likely due to desirability and more intense economic uses of land. Overall, we see Airbnb users prefer to make bookings in areas where residents are richer and house prices are higher, but also where Airbnb listing prices are lower. They try to maximise the difference between location desirability and listing price. 
-![regression](regression.png){width=100%}
-Once the relationship between variables has been established and determined to be positive, clustering analysis is conducted. Clustering allows objects (in this case Airbnb listings) to be grouped based on similar characteristics(ie variable coefficients) shared among them.  
-![Clustering](cluster.png){width=100%}
-Three clusters are identified using this technique. Clusters 1, 2, and 3, are colored black, pink, and yellow, respectively. 
-- Cluster 1 (black) contains listings with lowest occupancy numbers as well as low population density. The listing price of Cluster 1 is similar to that of Cluster 2 but is not located near the central area of London, resulting in low occupancy 
+
+![Multiple Linear Regression results](regression.png){width=100%}
+
+Once the relationship between variables has been established and determined to be positive, clustering analysis is conducted. Clustering allows objects (in this case Airbnb listings) to be grouped based on similar characteristics (ie variables) shared among them.  
+
+![MSOA Clusters identified](cluster.png){width=100%}
+
+Three clusters are identified using this technique. Clusters 1, 2, and 3, are colored black, pink, and yellow, respectively: 
+
+- Cluster 1 (black) contains listings with lowest occupancy numbers as well as low population density. The listing price of Cluster 1 is similar to that of Cluster 2 but is not located near the central area of London, resulting in low occupancy. 
 - Cluster 2 (pink) contains listings with the highest occupancy numbers. Population density is the highest in this cluster. Listing prices and house prices accurately reflect population density as they are also high. These characteristics can be attributed to Central London containing many internationally significant industrial and commercial firms, institutions, and other tourist attractions, resulting in high urban high density of built environments and high land values. 
 - Cluster 3 (yellow) contains relatively high occupancy rates, listings, and house prices (when compared to Cluster 1). Cluster 3 is mostly situated between Clusters 1 and 2 and does not have a high population density. It is the cluster of MSOAs with the highest average income together with Cluster 2. 
+
 To summarise, our analysis has shown that a positive correlation does exist between the variables and occupancy, and that a pattern can be observed when listings across London are grouped based on shared traits. Using the clustering findings, we can then begin addressing areas of interest – locations within London that may overlap in terms of desirability as shown through occupancy rates, while also having affordable listing prices that can entice future tourists who are willing to stay further away from Central London to save money. We can conclude that there are areas within London that have the potential to be developed and subsequently harnessed for tourism revenue, as seen by the high occupancy rates of Airbnb listings throughout Cluster 3.  
 
 ## Implications and Recommendations 
 ### Implications/consequences of not addressing the issue highlighted 
 As most of the world has moved towards recovery post-pandemic, it cannot be denied that some countries are excelling more than others. The UK in particular has had a very inconsistent response, with decisions such as the reversal of VAT-free shopping for tourists being deemed detrimental to post-pandemic recovery [@dcms_committee_damaging_2022]. The Business Committee of the UK parliament argues that a lack of critical analysis is put into each stage of decision-making, claiming that no analysis is done to drive major policy changes (ibid.). 
 We hope that this policy brief gets the ball rolling to address the issue of a crippled tourism and hospitality industry, by taking the first step of analysing potential areas to be developed for the purpose of tourist developments. The consequences of not taking notice of this analysis would result in frequent policy changes not backed by data or by proven scientific methods, resulting in costly U-turns. Additionally, as decisions are delayed or changed mid-implementation, the UK will continue falling behind in tourism, as they already are when compared to European neighbours such as France, Spain, Turkey, and Greece, many of whom whose visitor percentages have nearly returned to pre-pandemic numbers [@cnn_how_2021]. London specifically has struggled with emerging global cities such as Shanghai and Singapore over the past decade [@winghamLondonComparison], and the country’s post-Covid recovery response has only worsened their current state. 
+
 ### Recommendations on how best to utilize research findings 
 We recommend the findings of our analysis be used to determine which areas within London have the highest potential to be developed to accommodate the burgeoning number of visitors to the city, using factors such as occupancy rate of listings within the area as well as population density as determinants. However, it is important to note that only using this data to drive a policy change would be one-dimensional, and that this effort to revitalize tourism within London must be used concurrently with other datasets such as ones provided by the Cultural Infrastructure Map to help identify the overlap between demand of residence in the area with prospective tourist hotspots.  
 Other supplementary policies and frameworks must be introduced for each stage of the development process. A resilience-based framework encompassing government response, technological innovation, local belongingness, and consumer and employee confidence, should be at the forefront of the Parliament and Local Authority’s focus to provide a streamlined blueprint all stakeholders can refer to [@sharma_reviving_2021]. Within this framework, an emphasis on sustainable tourism within urban environments – which considers the effects of the tourism activities towards surroundings [@world_trade_organisation_2005] - should be incorporated to help support the city’s development in line with recommended environmental practices [@maxim_sustainable_2016]. Additionally, this framework should also incorporate steps to help regulate existing tourism sites within prominent areas such as the central cluster in the effort to combat the accelerated gentrification London faces and to protect local communities. 
